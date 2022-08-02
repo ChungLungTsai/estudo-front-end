@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funfamentos Flex-wrap</Flex-wrap></title>
+</head>
+<style>
+        .flex-conteiner{
+            display: flex;
+            height: 150px;
+            border: 5px solid;
+            max-width: 312px;
+        }
+        .flex-conteiner-row{
+            display: flex;
+            height: 150px;
+            border: 5px solid;
+            max-width: 312px;
+            flex-direction: column;
+        }
+        .item{
+            font-size: 24px;
+            height: 50%;
+            text-align: center;
+            width: 100px;
+            line-height: 50px;       
+            border: 2px solid gray;    
+            min-width: 100px;
+        }
+        .nowarp{
+            flex-wrap: nowrap;
+        }
+        .warp{
+            flex-wrap: wrap;
+        }
+        .warp-reverse{
+            flex-wrap: wrap-reverse;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: greenyellow;
+        }
+        .orange{
+            background-color: orangered;
+        }
+</style>
+<body>
+    <h1>no warp</h1>
+        <div class="flex-conteiner nowarp">
+          <div class="item orange">1</div>
+          <div class="item green">2</div>
+          <div class="item blue">3</div>  
+          <div class="item orange">4</div>
+        </div>
+        <h1>warp</h1>
+        <div class="flex-conteiner warp">
+          <div class="item orange">1</div>
+          <div class="item green">2</div>
+          <div class="item blue">3</div>  
+          <div class="item orange">4</div>
+        </div>
+        <h1>warp reverse</h1>
+        <div class="flex-conteiner warp-reverse">
+          <div class="item orange">1</div>
+          <div class="item green">2</div>
+          <div class="item blue">3</div>  
+          <div class="item orange">4</div>
+          <div class="item orange">5</div>
+        </div>
+        <h1>with flex direction clumn</h1>
+        <div class="flex-conteiner-row">
+            <div class="item orange">1</div>
+            <div class="item green">2</div>
+            <div class="item blue">3</div>  
+            <div class="item orange">4</div>
+            <div class="item orange">5</div>
+          </div>
+          <h1>END</h1>
+</body>
+</html>

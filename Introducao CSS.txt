@@ -1,0 +1,134 @@
+CSS
+Seletores
+Declaracoes
+ID(so usa uma vez na pagina)
+id:#(hash)
+Class
+class:.
+
+Box model
+As margens (margin) são espaçamentos entre elementos;
+As bordas (border) ;
+O padding é um espaçamento entre as bordas e o conteúdo, 
+a diferença para as margens é que declarações de 
+imagem de fundo funcionam nele;
+.post{
+	padding-top:**px;
+	padding-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 0;
+}
+.post{
+	background-color:green; ## #008800
+	background-image: url("bg.png");
+	background-position: top;
+}
+.post{
+	border: 3px solid blue; ##estilo linha solida
+	border-top: 2px dotted green; ## estilo linha polinhas/pontilhada
+	border-right: 4px dashed pink; ##estilo linha pedacos/tracejada
+}
+
+###border-widht: 3px;
+###border-color: #505050;
+###border-style: solid;
+border-width para a largura,
+A largura pode ser usada com várias unidades, como px, em e mm  
+border-color para a cor
+atribuída pelo nome ou por um código hexadecimal
+border-style para o estilo.
+O conteúdo (content) é o que o seu bloco representa, um texto, uma imagem, 
+um vídeo;
+
+Background: cor do fundo
+solid: mostra uma borda simples e reta;
+dotted: são bolinhas com um pequeno espaçamento entre elas;
+dashed: forma uma linha tracejada
+
+
+Border-radius:ele permite arredondar os cantos de um elemento
+border-radius: 10 px;
+border-radius: 50%;
+border-radius: 10% 20%;
+border-radius: 10% 20% 15% 22%; ##top, direita, inferior, equerdo`
+
+font-family
+font-size
+font-style
+
+###Texto
+##Estilo da fonte
+#title{
+	font-family: Verdana;
+}
+.post_title{
+	front-family: Verdana, Arial; ## dois estilo do fonte o 2 e plano B
+}
+## Tamanho da fonte
+.post_title{
+	font-size: 18px;
+}
+##Aparencia da fonte
+#title{
+	font-style: normal;
+}
+.subtitle{
+	font-style: italic;
+}
+## Peso da fonte
+#title{
+	font-weight: normal;
+}
+.subtitle{
+	font-weight: bold; ##negrito
+}
+## Transforme - muda para maiúsculo ou minúsculo
+#title{
+	text-transform: uppercase; ##coloca texto na caixa alta
+}
+#title{
+	text-transform: lowercase; ##coloca texto na caixa baixa
+}
+#title{
+	text-transform: capitalize; ## primeiras letras de cada palavras em maiuscula
+}
+##Decoracao de texto
+#title{
+	text-decoration: underline; ##linha cima
+}
+.subtitle{
+	text-decoration: overline; ##linha baixa
+.post_title{
+	text-decoration: line-though ##linha no meio
+}
+##Estilo de lista
+ul{
+	list-style-type: square; ##marcador quadrado
+}
+ol{
+	list-style-type: upper-roman; ##marcador letra maiusculo
+}
+ul{
+	list-style-type: "\1F44D" ##marcador simbolos
+}
+ul{
+	list-style-type: none ##sem (marcador, depende elemento) 
+}
+ul{
+	list-style-image: url("rocket.png") ##marcador imagem
+}
+
+###Dimensao e alinhemaneto
+##Width(largura)
+##Height
+
+##Max-width
+##Max-height
+
+##Margin
+margin: auto;
+##Text align
+
+Poscionamento texto
+
+text-align:right/enter/justify;

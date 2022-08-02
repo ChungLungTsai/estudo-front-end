@@ -1,0 +1,175 @@
+###Flex Conteiner
+##display: flex; #display itens de forma horizontal
+##flex-direction
+	row: linha em ordem direta pra esquerda
+	row-reverse: linha contrario
+	columm: coluna em ordem
+	columm-reverse: coluna em ordem contrario
+##flex-warp
+	nowarp:padrao, no permite quebra de linha 
+	warp: permete quebra de linha
+	wrap-reverse: permete quebra de linha com direccao contrario
+##flex-flow
+funciona qd tiver flex-flow,atalho pra as propriedades flex-direction
+e flex-wrap, qd muda flex-direction pra column, mante padrao do
+flex-wrapque eh nowrap
+	.default{normal, ajusta itens de acordo com tamanho
+            flex-flow: row nowrap;
+        }
+        .wrap{quebra itens de acordo com espaco, cima pra baixo,direta pra esquerda
+            flex-flow: wrap;
+        }
+        .wrap-reverse{quebra itens de baixo pra cima,esquerdo a direto
+            flex-flow: wrap-reverse;
+        }
+        .row-reverse-nowrap{ajusta itens de acordo com tamanho,direto a esquerdo
+            flex-flow: row-reverse nowrap;
+        }
+        .row-reverse-wrap{quebra itens de acordo com espaco, cima pra baixo,direto a esquerdo
+            flex-flow: row-reverse wrap;
+        }
+        .row-reverse-wrap-reverse{quebra itens de baixo pra cima,direto a esquerdo  
+            flex-flow: row-reverse wrap-reverse;
+        }
+##justify-content
+alinha os itens dentro do conteiner, trate da distribuicao de 
+espacoamento entre eles, qd os itens ocupa 100% do tudo o conteiner
+nao se aplica
+        .flex.start{ #flx-start:inicio do conteiner
+            justify-content: flex-start;
+        }
+        .flex-end{#flex-end:final do conteiner
+            justify-content: flex-end;
+        }
+        .center{#
+center:meio do conteiner
+            justify-content: center;
+        }
+        .space-between{#space-between:cria espaco uniforme intre
+	 os elementos
+            justify-content: space-between;
+        }
+        .space-around{#space-around:primeiro e ultimo espacos sao 
+	meio de outros
+            justify-content: space-around;
+        }
+        .column{
+            flex-direction: column;
+            min-height: 200px;
+        }
+##align-items
+        .center{#center:alinhamento dos itens ao centro
+            align-items: center;
+        }
+        .stretch{#stretch:padrao,e os flex itens crescam 
+igualmente
+            align-items: stretch;
+        }
+        .start{#flex-start:alinhamento dos itens no inicio
+            align-items: flex-start
+        }
+        .end{#flex-end:alinamento dos itens no final
+            align-items: flex-end;
+        }
+        .baseline{baseline:alinhamnto de acordo com a linha da 
+			tipografia do itens
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+
+##align-content
+#center
+#stretch
+#flex-start
+#flex-end
+#space-between
+#space-around
+
+###Flex item
+##flex-grow
+	trata espacamento no item
+	justify-content nao se aplica
+        .fg-0{
+            flex-grow: 0;
+        }
+        .fg-1{
+            flex-grow: 1;
+        }
+        .fg-2{
+            flex-grow: 2;
+##flax-basis
+valores: auto(caso item sem tamanho, proporcionara aut.,px,%,em,
+0(tera relacao com definicao do flex-grow)
+        .bauto{
+            flex-basis: auto;
+        }
+        .w100{
+            flex-basis: 100px;
+        }
+##flex-shrink
+propriedade que estabelecer a capacidade de reducao ou compressao
+do tamanho de item
+##flex
+atalho o abreviacao de escrita pra as propriadades:grow, shrink e 
+basis
+        .flex-1{
+            flex:1;
+            /* grow=1, shrink=1, basis=0*/
+        }
+        .flex-2{
+            flex:2;
+            /* grow=2, shrink=2, basis=0*/
+        }
+
+
+##order
+ordernar itens com numeros
+        .o1{
+            order:1;
+        }
+        .o2{
+            order:2;
+        }
+        .o3{
+            order:3;
+        }
+        .o4{
+            order:4;
+        }
+        <div class="item o1">1</div>
+        <div class="item o2">2</div>
+        <div class="item o3">3</div>
+        <div class="item o1">4</div>
+        <div class="item o2">5</div>
+        <div class="item o3">6</div>
+        <div class="item o1">7</div>
+##align-self
+estabelece alinhamento de modo individual sobre um determine item
+auto: padrao
+flex-star
+flex-end
+center
+stretch:ocupa todo os espaos relativo
+baseline:utiliza linha pase topografa
+.center{
+        align-self: center;
+    }
+    .start{
+        align-self: flex-start;
+    }
+    .end{
+        align-self: flex-end;
+    }
+    .staretc{
+        align-self:stretch
+    }
+    .baseline{
+        align-self: baseline;
+    }
+    .auto{
+        align-self: auto;
+    }
+
+##Diplay Flex

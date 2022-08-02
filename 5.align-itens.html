@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos align-itens</title>
+    <style>
+        .conteiner{
+            max-width: 350px;
+            border:1px solid black;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            margin: 5px;
+            color: aliceblue;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+        }
+        .stretch{
+            align-items: stretch;
+        }
+        .start{
+            align-items: flex-start
+        }
+        .end{
+            align-items: flex-end;
+        }
+        .baseline{
+            align-items: baseline;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .central{
+            height: 300px;
+            justify-content: center;
+        }
+        .central .item{
+            flex:0;
+            padding: 20px;
+        }
+    </style>
+    <h1>Row</h1>
+<p>center</p>
+    <section class="conteiner center">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>stretch</p>
+    <section class="conteiner stretch">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>flex-start</p>
+    <section class="conteiner start">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>flex-end</p>
+    <section class="conteiner end">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>baseline</p>
+    <section class="conteiner baseline">
+        <div class="item"><br baseline>Item 1</div>
+        <div class="item">sjaoijsoaij jsioajsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <h1>column</h1>
+    <section class="conteiner column center">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajxxxxxxxxxxxxxxsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>stretch</p>
+    <section class="conteiner column stretch">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajxxxxxxxxxxxxxxsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>flex-start</p>
+    <section class="conteiner column start">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajxxxxxxxxxxxxxxsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>flex-end</p>
+    <section class="conteiner column end">
+        <div class="item">Item 1</div>
+        <div class="item">sjaoijsoaij jsioajxxxxxxxxxxxxxxsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <p>baseline</p>
+    <section class="conteiner column baseline">
+        <div class="item"><br baseline>Item 1</div>
+        <div class="item">sjaoijsoaij jsioajxxxxxxxxxxxxxxsa jisjfiusdjfoijsdo a </div>
+        <div class="item">Item 3 mais alhuns </div>
+    </section>
+    <h1>alinhamento central a tela</h1>
+    <section class="conteiner central center">
+        <div class="item">jsdo jisdajoajsdioa jidjsaiojisisajdoisa idsjoaijdiosajdisa djsaoijdoisajdisa sadijaoisjdoisajdoiasj</div>
+    </section>
+</body>  
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos Align-content</title>
+    <style>
+        .conteiner{
+            height: 400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border:1px solid black;            
+        }
+        .item{
+            background-color: rgb(226, 86, 43);
+            padding: 0 5px;
+            margin: 5px;
+            flex: 1;
+            text-align: center;
+            color: aliceblue;      
+            border: 2px solid black;    
+        }
+        .stretch{
+            align-content: stretch;
+        }
+        .center{
+            align-content: center;
+        }
+        .flex-start{
+            align-content: flex-start;
+        }
+        .flex-end{
+            align-content: flex-end;
+        }
+        .space-between{
+            align-content: space-between;
+        }
+        .space-around{
+            align-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <p>stretch</p>
+    <div class="conteiner stretch">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4Ldjoisjds djsijdis is jidsjojafoiaj Ldjoisjds djsijdis is jidsjojafoiaj</div>
+        <div class="item">5Ldjoisjds djsijdis is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7Ldjoisjds djsijdis is jidsjojafoiaj</div>
+    </div>
+    <p>center</p>
+    <div class="conteiner center">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4Ldjoisjds djsijdis is jidsjojafoiaj Ldjoisjds ojafoiaj</div>
+        <div class="item">5Ldjoisjds djsijdis is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7Ldjoisjds djsijdis is jidsjojafoiaj</div>
+    </div>
+    <p>felx-start</p>
+    <div class="conteiner flex-start">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4LdjFs is jidsjojafoiaj</div>
+        <div class="item">5LdjFs is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7LdjFs is jidsjojafoiaj</div>
+    </div>
+    <p>felx-end</p>
+    <div class="conteiner flex-end">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4LdjFs is jidsjojafoiaj</div>
+        <div class="item">5LdjFs is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7LdjFs is jidsjojafoiaj</div>
+    </div>
+    <p>space-between</p>
+    <div class="conteiner space-between">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4LdjFs is jidsjojafoiaj</div>
+        <div class="item">5LdjFs is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7LdjFs is jidsjojafoiaj</div>
+    </div>
+    <p>space-around</p>
+    <div class="conteiner space-around">
+        <div class="item">1Ldjoisjds djsijdis is jidjafoiaj </div>
+        <div class="item">2Ldjoisjds djsijdis is oiaj</div>
+        <div class="item">3Ldjoisjds djsijdis is jidsjiaj</div>
+        <div class="item">4LdjFs is jidsjojafoiaj</div>
+        <div class="item">5LdjFs is jidsjojafoiaj</div>
+        <div class="item">6LdjFs is jidsjojafoiaj</div>
+        <div class="item">7LdjFs is jidsjojafoiaj</div>
+    </div>
+</body>
+</html>

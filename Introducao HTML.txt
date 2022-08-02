@@ -1,0 +1,30 @@
+Intruducao HTML
+
+Semântica
+<section>
+<header>
+<article>
+<aside>
+<footer>
+<h1>-<h6>
+
+TEXTO e LINK
+<p> representa um parágrafo
+<a> - que significa anchor/âncora, ele representa um hyperlink, é ele que interliga vários conteúdos e páginas na web.
+<a href="xxxxx@xxxxxx.xxxx.xxxxxx">texto</a>
+<a href="xxxxx@xxxxxx.xxxx.xxxxxx" target="_blank">texto</a>    ##abrir link em nova aba
+<a href="mailto:xxxxx@xxxxxx.xxxx.xxxxxx">texto</a>    ##abrir envio de e-mail
+
+IMAGEM
+<img src="img##pasta ou link/xxxxx.jpg"> inserir foto
+<img alt="nome_da_imagem"> descricao da foto qd nao carrega imagem
+
+Listas
+<ul> ##tabela normal
+item 1
+Item 2
+<ol> ##mostra numero de ordem
+<li> ## descrcao do item
+
+
+
